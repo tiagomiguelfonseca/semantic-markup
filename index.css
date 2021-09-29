@@ -14,11 +14,10 @@ nav li {
   display: inline;
   padding: 40px;
   font-family: Arial;
-font-weight: normal;
-font-size: 16px;
-text-align: left;
-color: #313131;
-
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  color: #313131;
 }
 
 nav {
@@ -32,7 +31,6 @@ nav {
   display: grid;
   grid-template-columns: 20% 1fr;
   justify-items: center;
-
 }
 
 /* Lettering */
@@ -106,21 +104,47 @@ social li {
 }
 
 article {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 footer {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 copyright {
-    text-align: right;
+  text-align: right;
 }
 
 #articleDataHorizontal {
-    margin-top:25px
+  margin-top: 25px;
+}
 
+.container {
+  position: relative;
+}
+
+.text-transparent {
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  bottom: 50%;
+  margin: 0;
+}
+
+box {
+  position: absolute;
+  top: 50%;
+  left: 87.5%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 99%;
+  background: rgba(0, 0, 0, 0.28);
 }
