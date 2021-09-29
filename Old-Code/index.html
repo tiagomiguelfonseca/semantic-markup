@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+    ></script>
+    <title>Document</title>
+    <script src="articles.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="Logo.png" alt="logo" />
+        <ul>
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="news.asp">About</a></li>
+          <li><a href="contact.asp">Services</a></li>
+          <li><a href="about.asp">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section1">
+      <aside>
+        <input type="text" placeholder="Search.." />
+        <h1>Latest from the blog</h1>
+        <articles>
+          <table class="grid" id="articleDataVertical">
+            <tbody></tbody>
+          </table>
+        </articles>
+      </aside>
+      <main>
+        <div class="container">
+        <img id="main-image" src="./Main.png" alt="main-lisbon" />
+        <box><p class="text-transparent">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo</p></box>
+      </div>
+        <articles>
+          <table id="articleDataHorizontal">
+            <tbody></tbody>
+          </table>
+        </articles>
+      </main>
+    </section>
+    <footer>
+      <social>
+        <ul>
+          <li>facebook</li>
+          <li>twitter</li>
+          <li>instagram</li>
+        </ul>
+      </social>
+      <Copyright> <p>© Copyright 2021. Semantic Markup.</p></Copyright>
+    </footer>
+  </body>
+</html>

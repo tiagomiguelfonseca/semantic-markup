@@ -4,57 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
-    ></script>
     <title>Document</title>
-    <script src="articles.js"></script>
+    <link rel="stylesheet" href="./Markup/css/index.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="Logo.png" alt="logo" />
-        <ul>
-          <li><a href="default.asp">Home</a></li>
-          <li><a href="news.asp">About</a></li>
-          <li><a href="contact.asp">Services</a></li>
-          <li><a href="about.asp">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="section1">
-      <aside>
-        <input type="text" placeholder="Search.." />
-        <h1>Latest from the blog</h1>
-        <articles>
-          <table class="grid" id="articleDataVertical">
-            <tbody></tbody>
-          </table>
-        </articles>
-      </aside>
-      <main>
-        <div class="container">
-        <img id="main-image" src="./Main.png" alt="main-lisbon" />
-        <box><p class="text-transparent">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo</p></box>
-      </div>
-        <articles>
-          <table id="articleDataHorizontal">
-            <tbody></tbody>
-          </table>
-        </articles>
+    <div id="wrapper">
+      <header>
+        <nav class=navbar>
+          <h1><img src="./Markup/images/logo.png" alt="logo" /></h1>
+          <ul class="site-navigation">
+              <li>
+                  <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-site">
+          <aside class=main-site-left>
+              <form action="">
+                  <input class="input-form"type="text" placeholder="search ...">
+                </form>
+                <h2 class="blog-title">Latest from the blog</h2>
+                  <article class="articles">
+                    <h3 class="article-title">The Electronic AppWrapper  was
+                      the first commercial electronic</h3>
+                    <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
+                      <a class="article-link" href="#">READ MORE…</a></p>
+                  </article>
+                  <article class="articles">
+                    <h3 class="article-title">The Electronic AppWrapper  was
+                      the first commercial electronic</h3>
+                    <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
+                      <a class="article-link" href="#">READ MORE…</a></p>
+                  </article>
+                  <article class="articles">
+                    <h3 class="article-title">The Electronic AppWrapper  was
+                      the first commercial electronic</h3>
+                    <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
+                      <a class="article-link" href="#">READ MORE…</a></p>
+                  </article>
+          </aside>
+          <div class="main-site-gap"></div>
+          <div class="main-site-right">
+            <div class="image-wrapper">
+              <div class="box-with-text">
+                <h3 class=h3-box>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo
+                </h3>
+              </div>
+              <img src="/Markup/images/main-image-full.jpg" class="main-image "alt="main-image" srcset="">
+            </div>
+              <div class="horizontal-articles">
+                <article class="articles">
+                  <h3 class="article-title">The Electronic AppWrapper  was
+                    the first commercial electronic</h3>
+                  <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
+                    <a class="article-link" href="#">READ MORE…</a></p>
+                </article>
+                <div class="main-site-gap"></div>
+                <article class="articles">
+                  <h3 class="article-title">The Electronic AppWrapper  was
+                    the first commercial electronic</h3>
+                  <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
+                    <a class="article-link" href="#">READ MORE…</a></p>
+                </article>
+                <div class="main-site-gap"></div>
+                <article class="articles">
+                  <h3 class="article-title">The Electronic AppWrapper  was
+                    the first commercial electronic</h3>
+                  <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
+                    <a class="article-link" href="#">READ MORE…</a></p>
+                </article>
+              </div>
+          </div>
       </main>
-    </section>
-    <footer>
-      <social>
-        <ul>
-          <li>facebook</li>
-          <li>twitter</li>
-          <li>instagram</li>
-        </ul>
-      </social>
-      <Copyright> <p>© Copyright 2021. Semantic Markup.</p></Copyright>
-    </footer>
+      <footer class="footer-flex">
+          <ul class="ul-social">
+            <li>
+              facebook
+            </li>
+            <li>
+              twitter
+            </li>
+            <li>
+              instagram
+            </li>
+          </ul>
+        <div>
+          <p>
+            © Copyright 2021. Semantic Markup.
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

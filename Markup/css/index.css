@@ -1,0 +1,147 @@
+/* page structure */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  color: #707070;
+}
+
+#wrapper {
+  /* border: 2px solid black; to delete */
+
+  width: 1024px;
+  height: 707px; /* to delete */
+  margin: 0 auto;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.site-navigation li {
+  list-style-type: none;
+  margin-left: 72px;
+  display: inline-flex;
+}
+
+/* main */
+
+.main-site {
+  display: grid;
+  grid-template-columns: 233px 30px 760px;
+  grid-template-rows: 565px; /* to delete */
+}
+
+/* main-site-left */
+
+.blog-title {
+  margin-top: 33px;
+  margin-bottom: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.main-site-left {
+  border-top: solid 5px #313131;
+  border-bottom: solid 5px #313131;
+  padding: 35px 0 35px 0;
+}
+
+.input-form {
+  width: 225px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid rgba(112, 112, 112, 0.36);
+}
+
+.articles {
+  margin-bottom: 30px;
+}
+
+.article-title {
+  /* margin-top: 33px; */
+  margin-bottom: 7px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color: #313131;
+}
+
+.article-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  color: #707070;
+}
+
+/* main site right */
+
+.main-site-right {
+  border-top: solid 5px #313131;
+  border-bottom: solid 5px #313131;
+  padding: 35px 0 35px 0;
+}
+
+.image-wrappper {
+  position: relative;
+}
+
+.main-image {
+  clip-path: inset(80px 38px 131px 5px);
+  margin-top: -80px;
+  margin-bottom: -131px;
+  margin-left: -5px;
+  /* position: absolute; */
+}
+
+.box-with-text {
+  position: absolute;
+    width: 215px;
+    height: 320px;
+    background: rgba(0, 0, 0, 0.28);
+    z-index: 1;
+    left: 984px;
+}
+
+.h3-box{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50%;
+
+}
+
+.horizontal-articles {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 20px 1fr;
+  position: relative;
+}
+
+/* footer */
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+}
+
+.ul-social li {
+display: inline;
+text-align: left;
+margin-right: 20px;
+left: 0;
+  }
