@@ -23,12 +23,18 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 41px;
+  margin-top: 41px;
 }
 
 .site-navigation li {
   list-style-type: none;
   margin-left: 72px;
   display: inline-flex;
+}
+
+.image-log {
+  width: 128px;
+height: 41px;
 }
 
 /* main */
@@ -99,17 +105,14 @@ body {
 }
 
 .main-image {
-  clip-path: inset(80px 38px 131px 5px);
-  margin-top: -80px;
-  margin-bottom: -131px;
-  margin-left: -5px;
-  /* position: absolute; */
+  width: 760px;
+height: 335px;
 }
 
 .box-with-text {
   position: absolute;
     width: 215px;
-    height: 320px;
+    height: 335px;
     background: rgba(0, 0, 0, 0.28);
     z-index: 1;
     left: 984px;
