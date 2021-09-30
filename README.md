@@ -3,7 +3,7 @@
 ## Semantic Markup Test
 
 ## Final Result
-![Final Result](./Design/Screenshot-semantic-markup-test)
+![Final Result](./Design/Screenshot-semantic-markup-test.png)
 
 # Lighthouse Score
 ![Lighthouse Score](./Design/lighhouse-report.png)
