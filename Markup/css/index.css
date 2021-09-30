@@ -144,7 +144,9 @@ body {
 
 .ul-social li {
   display: inline;
-  text-align: left;
   margin-right: 20px;
-  left: 0;
+}
+
+.ul-social {
+  padding: 0;
 }
