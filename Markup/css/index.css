@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   text-align: left;
@@ -10,10 +9,17 @@ body {
 }
 
 #wrapper {
-  /* border: 2px solid black; just to test */
-  /* height: 707px; just to test */
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* navbar */
@@ -25,28 +31,41 @@ body {
   margin-top: 41px;
 }
 
-.site-navigation li {
+/*/ ul li styling should be always on ul except for margin between elements, that goes to li /*/
+
+.site-navigation {
   list-style-type: none;
-  margin-left: 72px;
-  display: inline-flex;
+  display: flex;
   font-family: Arial;
-  font-weight: normal;
   font-size: 16px;
-  text-align: left;
-  color: #313131;
+  color: #707070;
+  gap: 72px;
 }
 
-.image-log {
+/* There's no need to put height on images */
+.image-logo {
   width: 128px;
-  height: 41px;
 }
 
 /* main */
-
 .main-site {
-  display: grid;
-  grid-template-columns: 233px 30px 760px;
-  grid-template-rows: 565px; /* to delete */
+  display: flex;
+}
+
+.main-site-left {
+  border-top: solid 5px #313131;
+  border-bottom: solid 5px #313131;
+  padding: 35px 0 35px 0;
+  margin-right: 15px;
+}
+
+.main-site-right {
+  border-top: solid 5px #313131;
+  border-bottom: solid 5px #313131;
+  padding: 35px 0 35px 0;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* main-site-left */
@@ -54,85 +73,85 @@ body {
 .blog-title {
   margin-top: 33px;
   margin-bottom: 20px;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: left;
-}
-
-.main-site-left {
-  border-top: solid 5px #313131;
-  border-bottom: solid 5px #313131;
-  padding: 35px 0 35px 0;
+  font-family: Arial, sans-serif;
+  color: #313131;
 }
 
 .blog-input-form {
-  width: 225px;
+  width: 100%;
   height: 30px;
   background: #fff;
   border: 1px solid rgba(112, 112, 112, 0.36);
-  text-indent: 15px;
+  /* padding-left: 15px; */
 }
 
-.articles {
+.blog-input-form::placeholder {
+  padding-left: 15px;
+}
+
+.article {
   margin-bottom: 30px;
 }
 
-.article-title {
-  /* margin-top: 33px; */
+.vertical-article-title {
   margin-bottom: 7px;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 14px;
   text-align: left;
   color: #313131;
 }
 
 .article-link {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: left;
-  color: #707070;
+    color: #707070;
+
+}
+
+.article-text {
+  margin: 0;
+}
+
+.article-readmore {
+  margin:0
 }
 
 /* main site right */
 
-.main-site-right {
-  border-top: solid 5px #313131;
-  border-bottom: solid 5px #313131;
-  padding: 35px 0 35px 0;
+.wrapper-right {
   position: relative;
 }
 
 .main-image {
-  width: 760px;
-  height: 335px;
+  width: 100%;
 }
 
 .box-with-text {
   position: absolute;
   width: 215px;
-  height: 335px;
+  height: 99%;
   background: rgba(0, 0, 0, 0.28);
-  z-index: 1;
   right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .h3-box {
-  font-weight: normal;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
+  font-weight: normal;
+
   color: #fff;
-  margin-top: 50%;
+  margin: 0 19px;
 }
 
 .horizontal-articles {
-  display: grid;
-  grid-template-columns: 1fr 30px 1fr 20px 1fr;
-  position: relative;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.horizontal-article-title {
+  text-align: left;
+  color: #313131;
+  margin-top: 0;
 }
 
 /* footer */
@@ -140,13 +159,19 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  color: #707070;
 }
 
-.ul-social li {
-  display: inline;
+.social-item {
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .ul-social {
   padding: 0;
+  display: flex;
+}
+
+.ul-social, .copyright a{
+  color: #707070;
 }

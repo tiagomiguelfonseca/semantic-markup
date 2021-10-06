@@ -1,108 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Blog test SG">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="author" content="Tiago Silva">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Blog test SG" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Tiago Silva" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My blog Site</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <div id="wrapper">
       <header>
-        <nav class=navbar>
-          <h1><img class="image-logo" src="images/logo.png" alt="logo" /></h1>
+        <nav class="navbar">
+          <h1>
+            <a href="#"
+              ><img class="image-logo" src="images/logo.png" alt="logo"
+            /></a>
+          </h1>
           <ul class="site-navigation">
-              <li>
-                  <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
+            <li>
+              <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">Services</a>
+              <a href="#">About</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-site">
-          <aside class=main-site-left>
-              <form action="#">
-                  <input class="blog-input-form" type="text" placeholder="search ...">
-                </form>
-                <h2 class="blog-title">Latest from the blog</h2>
-                  <article class="articles">
-                    <h3 class="article-title">The Electronic AppWrapper  was
-                      the first commercial electronic</h3>
-                    <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
-                      <a class="article-link" href="#">READ MORE…</a></p>
-                  </article>
-                  <article class="articles">
-                    <h3 class="article-title">The Electronic AppWrapper  was
-                      the first commercial electronic</h3>
-                    <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
-                      <a class="article-link" href="#">READ MORE…</a></p>
-                  </article>
-                  <article class="articles">
-                    <h3 class="article-title">The Electronic AppWrapper  was
-                      the first commercial electronic</h3>
-                    <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
-                      <a class="article-link" href="#">READ MORE…</a></p>
-                  </article>
-          </aside>
-          <div class="main-site-gap"></div>
-          <div class="main-site-right">
-              <div class="box-with-text">
-                <h3 class=h3-box>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo
-                </h3>
-              </div>
-              <img src="images/main-image.png" class="main-image" alt="main-image">
-              <div class="horizontal-articles">
-                <article class="articles">
-                  <h3 class="article-title">The Electronic AppWrapper  was
-                    the first commercial electronic</h3>
-                  <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
-                    <a class="article-link" href="#">READ MORE…</a></p>
-                </article>
-                <div class="main-site-gap"></div>
-                <article class="articles">
-                  <h3 class="article-title">The Electronic AppWrapper  was
-                    the first commercial electronic</h3>
-                  <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
-                    <a class="article-link" href="#">READ MORE…</a></p>
-                </article>
-                <div class="main-site-gap"></div>
-                <article class="articles">
-                  <h3 class="article-title">The Electronic AppWrapper  was
-                    the first commercial electronic</h3>
-                  <p class="article-text">Application software is software designed to perform a group of coordinated functions, task
-                    <a class="article-link" href="#">READ MORE…</a></p>
-                </article>
-              </div>
+        <aside class="main-site-left">
+          <form action="#">
+            <input
+              class="blog-input-form"
+              type="text"
+              placeholder="search ..."
+            />
+          </form>
+          <h2 class="blog-title">Latest from the blog</h2>
+          <div class="vertical-articles">
+          <article class="article">
+            <h3 class="vertical-article-title">
+              The Electronic AppWrapper was the first commercial electronic
+            </h3>
+            <p class="article-text">
+              Application software is software designed to perform a group of
+              coordinated functions, task
+            </p>
+            <p class="article-readmore">
+              <a class="article-link" href="#">READ MORE…</a>
+            </p>
+          </article>
+          <article class="article">
+            <h3 class="vertical-article-title">
+              The Electronic AppWrapper was the first commercial electronic
+            </h3>
+            <p class="article-text">
+              Application software is software designed to perform a group of
+              coordinated functions, task
+            </p>
+            <p class="article-readmore">
+              <a class="article-link" href="#">READ MORE…</a>
+            </p>
+          </article>
+          <article class="article">
+            <h3 class="vertical-article-title">
+              The Electronic AppWrapper was the first commercial electronic
+            </h3>
+            <p class="article-text">
+              Application software is software designed to perform a group of
+              coordinated functions, task
+            </p>
+            <p class="article-readmore">
+              <a class="article-link" href="#">READ MORE…</a>
+            </p>
+          </article>
+        </div>
+        </aside>
+        <div class="main-site-right">
+          <div class="wrapper-right">
+            <div class="box-with-text">
+              <div></div>
+              <h3 class="h3-box">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium dolo
+              </h3>
+            </div>
+            <img
+              src="images/main-image.png"
+              class="main-image"
+              alt="main-image"
+            />
           </div>
+          <div class="horizontal-articles">
+            <article class="article">
+              <h3 class="horizontal-article-title">
+                The Electronic AppWrapper was the first commercial electronic
+              </h3>
+              <p class="article-text">
+                Application software is software designed to perform a group of
+                coordinated functions, task
+              </p>
+              <p class="article-readmore">
+                <a class="article-link" href="#">READ MORE…</a>
+              </p>
+            </article>
+            <article class="article">
+              <h3 class="horizontal-article-title">
+                The Electronic AppWrapper was the first commercial electronic
+              </h3>
+              <p class="article-text">
+                Application software is software designed to perform a group of
+                coordinated functions, task
+              </p>
+              <p class="article-readmore">
+                <a class="article-link" href="#">READ MORE…</a>
+              </p>
+            </article>
+            <article class="article">
+              <h3 class="horizontal-article-title">
+                The Electronic AppWrapper was the first commercial electronic
+              </h3>
+              <p class="article-text">
+                Application software is software designed to perform a group of
+                coordinated functions, task
+              </p>
+              <p class="article-readmore">
+                <a class="article-link" href="#">READ MORE…</a>
+              </p>
+            </article>
+          </div>
+        </div>
       </main>
       <footer class="footer-flex">
-          <ul class="ul-social">
-            <li>
-              facebook
-            </li>
-            <li>
-              twitter
-            </li>
-            <li>
-              instagram
-            </li>
-          </ul>
+        <ul class="ul-social">
+          <li class="social-item"><a href="#">facebook</a></li>
+          <li class="social-item"><a href="#">twitter</a></li>
+          <li class="social-item"><a href="#">instagram</a></li>
+        </ul>
         <div>
-          <p>
-            © Copyright 2021. Semantic Markup.
+          <p class="copyright">
+            <a href="#">&copy; Copyright 2021. Semantic Markup.</a>
           </p>
         </div>
       </footer>
