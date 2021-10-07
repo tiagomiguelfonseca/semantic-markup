@@ -119,7 +119,9 @@ a:hover {
 }
 
 .main-image {
-  width: 100%;
+  width: 100%; 
+  height: 335px; 
+  object-fit: cover;
 }
 
 .box-with-text {
